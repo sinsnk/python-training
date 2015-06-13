@@ -1,11 +1,12 @@
 class FizzBuzz(object):
+  (FIZZ,BUZZ,) = (3, 5)
   MAX_SIZE = 20
   
   def fb(self,n):
     result = ""
-    if n % 3 == 0:
+    if n % self.FIZZ == 0:
       result += "Fizz"
-    if n % 5 == 0:
+    if n % self.BUZZ == 0:
       result += "Buzz"
     return result
 
